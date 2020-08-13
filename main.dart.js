@@ -56205,10 +56205,7 @@ $S:0}
 U.t7.prototype={
 a7:function(){return new U.I7(C.j)}}
 U.I7.prototype={
-al:function(){this.aC()
-var s=t.c
-Y.bA(this.c,!1,s).rh()
-Y.bA(this.c,!1,s).ri()},
+al:function(){this.aC()},
 C:function(a,b){var s,r=null,q=Y.bA(b,!0,t.c),p=H.a([],t.t)
 if(q.glB().length!==0)p.push(L.b3("Friend Request",r,r,r,r,r))
 if(q.glB().length!==0){s=q.glB().length
@@ -56278,7 +56275,10 @@ a7:function(){var s=null,r=t.X,q=t._
 return new U.z0(H.a([P.a6(["page",new K.rY(s),"title","chats","action",null,"barItem",F.aac(L.fd(C.yf,s),L.b3("Chats",s,s,s,s,s))],r,q),P.a6(["page",new U.t7(s),"title","Contacts","action",[],"barItem",F.aac(L.fd(C.yi,s),L.b3("Contacts",s,s,s,s,s))],r,q),P.a6(["page",new T.vh(s),"title","Me","action",null,"barItem",F.aac(L.fd(C.yn,s),L.b3("Profiles",s,s,s,s,s))],r,q)],t.fz),C.j)}}
 U.z0.prototype={
 We:function(a){this.a5(new U.a7h(this,a))},
-al:function(){this.aC()},
+al:function(){this.aC()
+var s=t.c
+Y.bA(this.c,!1,s).rh()
+Y.bA(this.c,!1,s).ri()},
 C:function(a,b){var s,r,q,p,o=this,n=null,m=o.e,l=L.b3(m[o.d].h(0,"title"),n,n,n,n,n)
 l=E.Ao(o.d===1?H.a([B.hO(n,L.fd(C.ya,n),new U.a7j(b),n),B.hO(n,L.fd(C.yo,n),new U.a7k(),n)],t.t):n,l)
 s=K.ac(b,!1).x
@@ -56386,12 +56386,14 @@ a7:function(){return new R.JJ(C.j)}}
 R.JJ.prototype={
 al:function(){this.aC()},
 C:function(a,b){var s,r,q,p=null,o=this.a.c
-if(o.b==="individual"){s=o.a[0]
-r=s.c
-r=K.B0(C.kB,r.length===0?p:new D.hW(r),30)
-q=L.b3(s.a,p,p,p,p,p)
+if(o.b==="individual"){s=o.a
+if(s.length<=0)return p
+r=s[0]
+s=r.c
+s=K.B0(C.kB,s.length===0?p:new D.hW(s),30)
+q=L.b3(r.a,p,p,p,p,p)
 o=o.c
-return Q.aed(r,new R.a5b(this,b),L.b3(o.b,p,p,p,p,p),q,L.b3(o.Zj(),p,p,p,p,p))}}}
+return Q.aed(s,new R.a5b(this,b),L.b3(o.b,p,p,p,p,p),q,L.b3(o.Zj(),p,p,p,p,p))}}}
 R.a5b.prototype={
 $0:function(){K.fi(this.b,!1).lz("/chat-screen",this.a.a.c,t._)},
 $S:0}
