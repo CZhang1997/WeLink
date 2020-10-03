@@ -3,9 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "3a96c425e7e1ffc11ecf48aee5d436ec",
-"/": "3a96c425e7e1ffc11ecf48aee5d436ec",
-"main.dart.js": "b5027251c0bd718a872ef10c3b26259d",
+  "version.json": "f1a8fecd8e07aa55d68c48a1250a9d3f",
+"index.html": "b278f66e13b3f8eff8753ded81d98676",
+"/": "b278f66e13b3f8eff8753ded81d98676",
+"main.dart.js": "ccc124efae833dec2306e21cc8fced4d",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
@@ -16,6 +17,7 @@ const RESOURCES = {
 ".git/objects/59/2112eb762c55a7e0a57197b233ee15d11e1d34": "276f05a2befc12ef33ef2287323765f8",
 ".git/objects/92/32bebeb4acec5aa8caf767edb304cf21aed3b2": "779e64c8968ede5ebad33de0c4115ff3",
 ".git/objects/92/c52230da47b05fdae5d712d76dd3b550633767": "abb58465708fcad41e7918713685fb81",
+".git/objects/68/7acd872a4139e6982a092d6a528725c1f6aacb": "c4f5aa1d79d03efc21af95959a546bd3",
 ".git/objects/57/5c9e4d91944918d6b532c0cb14724c432adf3a": "47fe29f63639f96ee6e4848ba6e15ca2",
 ".git/objects/3b/3d20a66cb90b57db173371ade8312150413898": "4951109a32cce2b07ba5df60052a89e9",
 ".git/objects/3b/980dec3e98e6418e6ef9af0f7b6b6c3ac336c9": "0fe4e2888186b38e741afc38eada679b",
@@ -40,7 +42,9 @@ const RESOURCES = {
 ".git/objects/eb/7f48516a3ebc7fb9bb191e95bc8debdfa1f467": "c95fcbc99613d88472575301c92efecb",
 ".git/objects/ee/2276ca85f085ddc31da59c15cd86ed749e4fd5": "3d7acaf659695d22cc626a18194ee738",
 ".git/objects/e4/583bf7c3f4f6f10cee1408efb4418500a32120": "71bdf5b79f405e49f26d46908c36aa3c",
+".git/objects/c6/25e495216c16018014930bdbf27e7d42ab1278": "33eff5419fbbfd874d83ac4c76430d18",
 ".git/objects/18/763730132df6c0a95430a6b6b8fb32fcf59bdb": "13617848ab9c8a7b3ff1641be5f1171b",
+".git/objects/27/77e9e61b87259df92fa9f88ba609615864af6d": "643b28672a21b7087f51fa0c1dcaea66",
 ".git/objects/4b/419cb76d6c76605e908730f50ce9202cde33cd": "a0b8b8c4844c95f43bd6a295ac61a05f",
 ".git/objects/4b/a5e89db841bb6609367773541339636b9e0826": "5764841eb5a3a176a3116a2bb0114f90",
 ".git/objects/4b/43e22868501b705d2088688bfdc0b331d721d5": "fbd02fc73ec5b2b35f8f028e206f2f85",
@@ -61,6 +65,7 @@ const RESOURCES = {
 ".git/objects/43/02ad3f4a62f1e66ac282f6058d6a0734135ed5": "babafa7bd57f1484e5278921d5dd6580",
 ".git/objects/43/de0cf177ae870753c080a17de8ce1487cfe069": "9992b3ee94e55265f9b32c699ef6c9bb",
 ".git/objects/6b/6728f528001e3620b4d78717a5a19f25328b39": "0e89c3121945ea408bb9b458c3b82563",
+".git/objects/6b/debf49584ad78e78dad6e2acd600dcdb55c21e": "5e619f0987465010c8fda3a3fe893173",
 ".git/objects/00/bac42800086a94f7d41a7b4b9abf9de3e8092a": "dda3193891506ac2c0a2cd3ff5fc1d81",
 ".git/objects/5d/eb7f39f95c40248921891b24a10a8915ebf0cb": "ee329f4261cbe4240b7124acd32da744",
 ".git/objects/5d/b568129229a1e2b7398bf62a51bc18e80093c1": "a395798b27a70e6a95ed28cf1cf7825a",
@@ -74,6 +79,7 @@ const RESOURCES = {
 ".git/objects/99/2850986cbb839721e5206dc97c29b63a1252e3": "b6f0381cc65254baa7e76843d7ceecdd",
 ".git/objects/52/0db953c6a50cb40b482a03908b96404fd90b87": "01aa77d6f0f138ab73f64b2545fdaf38",
 ".git/objects/0f/9a32b31c1b43188a58fc16083206a508eb081d": "2bcecd35c013722e7951d062c02cd527",
+".git/objects/a7/7b8061066470c72afe47a7b6db779bef260291": "46144b17989db04bdd51eb8b21028b5c",
 ".git/objects/dc/0564161275f01b5f673ec396460477a41744cb": "de0b51598a040a810f4dc22cda520de9",
 ".git/objects/b6/684879ecb275989fc558607185f79935be7b00": "1687cf1003bc970fb5db71a0fe57f37e",
 ".git/objects/d2/915f772c057fcaa26e22eda7a0692060ebc228": "3f8d6b2686dd57b062a925c441efdf97",
@@ -115,10 +121,10 @@ const RESOURCES = {
 ".git/objects/14/37a908a80ac86626dda65e3b5c3123cc75b4a4": "1a43d94eb8464b9f0cbf1173785e1d6f",
 ".git/HEAD": "4cf2d64e44205fe628ddd534e1151b58",
 ".git/info/exclude": "036208b4a1ab4a235d75c181e685e5a3",
-".git/logs/HEAD": "9d7c55dcb5c568edd92415e9a595dea6",
-".git/logs/refs/heads/master": "9d7c55dcb5c568edd92415e9a595dea6",
+".git/logs/HEAD": "4f9908a313728ddb227f30dbb4422353",
+".git/logs/refs/heads/master": "4f9908a313728ddb227f30dbb4422353",
 ".git/logs/refs/remotes/origin/HEAD": "591a74d536d64346172818a31e5c60d0",
-".git/logs/refs/remotes/origin/master": "2f04843c7087d314a910a3cd18735d12",
+".git/logs/refs/remotes/origin/master": "0762fc65589425a7d68ccc28ff0af5f9",
 ".git/description": "a0a7c3fff21f2aea3cfa1d0316dd816c",
 ".git/hooks/commit-msg.sample": "579a3c1e12a1e74a98169175fb913012",
 ".git/hooks/pre-rebase.sample": "56e45f2bcbc8226d2b4200f7c46371bf",
@@ -132,17 +138,17 @@ const RESOURCES = {
 ".git/hooks/pre-applypatch.sample": "054f9ffb8bfe04a599751cc757226dda",
 ".git/hooks/pre-push.sample": "3c5989301dd4b949dfa1f43738a22819",
 ".git/hooks/update.sample": "517f14b9239689dff8bda3022ebd9004",
-".git/refs/heads/master": "2b6670c66fd316e053b91a1fce4fb633",
+".git/refs/heads/master": "a9e4651ee68c1a3ef8e61463e2f50096",
 ".git/refs/remotes/origin/HEAD": "73a00957034783b7b5c8294c54cd3e12",
-".git/refs/remotes/origin/master": "2b6670c66fd316e053b91a1fce4fb633",
-".git/index": "42b05b4a0474a10e0c29f122845ed25f",
+".git/refs/remotes/origin/master": "a9e4651ee68c1a3ef8e61463e2f50096",
+".git/index": "18e0db08d38085a8b1f68710293bf733",
 ".git/packed-refs": "a714e7a8d01fa183a97264d351ef9e49",
 ".git/COMMIT_EDITMSG": "69b64623f86def16ce17d454b8be41ae",
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
-"assets/NOTICES": "ba4e39b0b6ed8f64671e85798cfb56d7",
+"assets/NOTICES": "12352de20ef5a1ce4c9bfe5e32100c13",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25"
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -154,13 +160,13 @@ const CORE = [
 "assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
-
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a 'reload' param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'reload'})));
+      return cache.addAll(
+        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
     })
   );
 });
@@ -175,7 +181,6 @@ self.addEventListener("activate", function(event) {
       var tempCache = await caches.open(TEMP);
       var manifestCache = await caches.open(MANIFEST);
       var manifest = await manifestCache.match('manifest');
-
       // When there is no prior manifest, clear the entire cache.
       if (!manifest) {
         await caches.delete(CACHE_NAME);
@@ -189,7 +194,6 @@ self.addEventListener("activate", function(event) {
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
         return;
       }
-
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
@@ -227,24 +231,33 @@ self.addEventListener("activate", function(event) {
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
+  if (event.request.method !== 'GET') {
+    return;
+  }
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
+  if (key.indexOf('?v=') != -1) {
+    key = key.split('?v=')[0];
+  }
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
-  // If the URL is not the RESOURCE list, skip the cache.
+  // If the URL is not the RESOURCE list then return to signal that the
+  // browser should take over.
   if (!RESOURCES[key]) {
-    return event.respondWith(fetch(event.request));
+    return;
+  }
+  // If the URL is the index.html, perform an online-first request.
+  if (key == '/') {
+    return onlineFirst(event);
   }
   event.respondWith(caches.open(CACHE_NAME)
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache. Ensure the resources are not cached
-        // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'reload'});
-        return response || fetch(modifiedRequest).then((response) => {
+        // lazily populate the cache.
+        return response || fetch(event.request).then((response) => {
           cache.put(event.request, response.clone());
           return response;
         });
@@ -257,11 +270,12 @@ self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
   if (event.data === 'skipWaiting') {
-    return self.skipWaiting();
+    self.skipWaiting();
+    return;
   }
-
-  if (event.message === 'downloadOffline') {
+  if (event.data === 'downloadOffline') {
     downloadOffline();
+    return;
   }
 });
 
@@ -284,4 +298,26 @@ async function downloadOffline() {
     }
   }
   return contentCache.addAll(resources);
+}
+
+// Attempt to download the resource online before falling back to
+// the offline cache.
+function onlineFirst(event) {
+  return event.respondWith(
+    fetch(event.request).then((response) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        cache.put(event.request, response.clone());
+        return response;
+      });
+    }).catch((error) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        return cache.match(event.request).then((response) => {
+          if (response != null) {
+            return response;
+          }
+          throw error;
+        });
+      });
+    })
+  );
 }
